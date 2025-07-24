@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<channel>
+<title>Test RSS Feed - Invalid Date Formats</title>
+<link>https://example.com/test-feed</link>
+<description>RSS feed with various invalid and alternative date formats for testing</description>
+
+<item>
+<title>Item with Negative Year</title>
+<description>Testing negative year in date</description>
+<link>https://example.com/item-1</link>
+<guid isPermaLink="false">001</guid>
+<pubDate>Tue, 30 Nov -0001 00:00:00 -0517</pubDate>
+</item>
+
+<item>
+<title>Item with Invalid Month</title>
+<description>Testing invalid month name</description>
+<link>https://example.com/item-2</link>
+<guid isPermaLink="false">002</guid>
+<pubDate>Wed, 32 Foo 2025 12:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>Item with Invalid Day</title>
+<description>Testing invalid day number</description>
+<link>https://example.com/item-3</link>
+<guid isPermaLink="false">003</guid>
+<pubDate>Mon, 99 Dec 2025 15:30:00 -0800</pubDate>
+</item>
+
+<item>
+<title>Item with ISO 8601 Format</title>
+<description>Testing ISO 8601 format instead of RFC 2822</description>
+<link>https://example.com/item-4</link>
+<guid isPermaLink="false">004</guid>
+<pubDate>2025-07-24T10:30:00Z</pubDate>
+</item>
+
+<item>
+<title>Item with Missing Timezone</title>
+<description>Testing date without timezone</description>
+<link>https://example.com/item-5</link>
+<guid isPermaLink="false">005</guid>
+<pubDate>Thu, 24 Jul 2025 14:00:00</pubDate>
+</item>
+
+<item>
+<title>Item with Invalid Timezone</title>
+<description>Testing invalid timezone format</description>
+<link>https://example.com/item-6</link>
+<guid isPermaLink="false">006</guid>
+<pubDate>Fri, 25 Jul 2025 09:00:00 +9999</pubDate>
+</item>
+
+<item>
+<title>Item with Wrong Day Name</title>
+<description>Testing incorrect day name for date</description>
+<link>https://example.com/item-7</link>
+<guid isPermaLink="false">007</guid>
+<pubDate>Sunday, 24 Jul 2025 16:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>Item with Invalid Time</title>
+<description>Testing invalid time format</description>
+<link>https://example.com/item-8</link>
+<guid isPermaLink="false">008</guid>
+<pubDate>Thu, 24 Jul 2025 25:70:99 -0400</pubDate>
+</item>
+
+<item>
+<title>Item with Completely Invalid Format</title>
+<description>Testing completely wrong date format</description>
+<link>https://example.com/item-9</link>
+<guid isPermaLink="false">009</guid>
+<pubDate>July 24th, 2025 at 3:00 PM EST</pubDate>
+</item>
+
+<item>
+<title>Item with Empty Date</title>
+<description>Testing empty date tag</description>
+<link>https://example.com/item-10</link>
+<guid isPermaLink="false">010</guid>
+<pubDate></pubDate>
+</item>
+
+</channel>
+</rss>
